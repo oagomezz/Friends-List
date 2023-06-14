@@ -1,6 +1,7 @@
 databases:
   - name: postgres
-    ipAllowList: []
+    databaseName: "https://rails-1kbe.onrender.com"
+    user: "https://rails-1kbe.onrender.com"
 
 services:
   - type: web
