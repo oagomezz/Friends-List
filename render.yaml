@@ -3,7 +3,7 @@ databases:
  isAllowList: []
 
 services: 
-  -type: web
+  - type: web
     name: rails
     env: ruby
     buildCommand: './bin/render.build.sh'
