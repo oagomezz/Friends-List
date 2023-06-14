@@ -11,7 +11,7 @@ services:
     envVars: 
       - key: 116ac9aea6dc49d82540896949b3ea20
         sync: false
-      - key: DATABASE_RUL
+      - key: DATABASE_URL
         fromDatabase: 
           name: postgres
           property: connectionString
