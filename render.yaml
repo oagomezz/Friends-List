@@ -1,24 +1,24 @@
-databases: 
- -name: postgres
- isAllowList: []
+databases:
+  - name: postgres
+    isAllowList: []
 
-services: 
+services:
   - type: web
     name: rails
     env: ruby
     buildCommand: './bin/render.build.sh'
     startCommand: bundle exec rails s
-    envVars: 
+    envVars:
       - key: 116ac9aea6dc49d82540896949b3ea20
         sync: false
       - key: DATABASE_URL
-        fromDatabase: 
+        fromDatabase:
           name: postgres
           property: connectionString
-- type: redis
-  name: redis
-  ipAllowList: []
-  plan: free
-  maxmemoryPolicy: noeviction
+  - type: redis
+    name: redis
+    ipAllowList: []
+    plan: free
+    maxmemoryPolicy: noeviction
 
   
