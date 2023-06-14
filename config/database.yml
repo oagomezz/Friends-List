@@ -16,7 +16,7 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-username: friend_list_database_user
+username: "friend_list_database_user"
 password: 0uh9eD8LLkIdYWRSrhpIkaNKQqMkueiV
 host: dpg-ci4fn05gkuvm71e55ni0-a
 port: 5432
